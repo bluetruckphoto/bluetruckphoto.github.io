@@ -46,44 +46,68 @@
 
 <body>
     <div class="container">
-        <h1>Website Under Construction</h1>
+        <h1>bluetruckphoto.com is under construction</h1>
         <div class="loading-icon">🏗️</div>
-        <p>Our website is currently being built. Check back soon for updates!</p>
+        <p>Our website is currently being built.  Check back soon for updates!  In the meantime, feel free to contact us with any inquiries!</p>
     </div>
     
-<form action="https://api.web3forms.com/submit" method="POST">
+<form action="https://api.web3forms.com/submit" method="POST" id="form">
+  <fieldset>
+    <legend>Contact Form</legend>
+    <input type="hidden" name="access_key" value="fe32bd10-3b36-4025-8227-98ff2c296c56" />
+    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+    <input
+      type="hidden"
+      name="redirect"
+      value="https://web3forms.com/success"
+    />
+    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+    <div>
+      <label for="name">Full Name</label><br />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Required"
+        required
+      />
+      <br /><br />
+    </div>
+    <div>
+      <label for="email">Email Address</label><br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Required"
+        required
+      /><br /><br />
+    </div>
+    <div>
+      <label for="phone">Phone Number</label>
+      <br />
+      <input
+        type="text"
+        name="phone"
+        id="phone"
+        placeholder=""
+      /><br /><br />
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <br />
+      <textarea
+        rows="5"
+        name="message"
+        id="message"
+        placeholder="Required"
+        required
+      ></textarea
+      ><br /><br />
+    </div>
 
-  <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
-  <input type="hidden" name="access_key" value="fe32bd10-3b36-4025-8227-98ff2c296c56">
-
-  <!-- Optional: Subject an be prefilled using type="hidden"
-       or type="text" for normal user submitted input -->
-  <input type="hidden" name="subject" value="Blue Truck Photo Contact Request">
-
-
-  <!-- Optional: But Recommended: To Prevent SPAM Submission.
-       Make sure its hidden by default -->
-  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-  
-   <!-- hCaptcha: Recommended for Advanced Spam Protection. -->
-  <div class="h-captcha" data-captcha="true"></div>
-
-  
-
-  <!-- Custom Form Data: Form data you wish to receive in email. -->
-  <input type="email" name="email" required>
-  <input type="text" name="First Name" required>
-  <input type="text" name="Phone Number" required>
-  <textarea name="message" required></textarea>
-
-  <button type="submit">Submit Form</button>
-
-</form>
-
-<!-- Required only if you are using hCaptcha or Advanced File Upload. -->
-<script src="https://web3forms.com/client/script.js" async defer></script>
-
-
+    <button type="submit">Send Message</button>
+  </fieldset>
 </form>
     
 </body>
